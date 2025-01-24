@@ -21,3 +21,6 @@ while True:
     cv2.imshow("automatic camera", frame)
     if cv2.waitKey(10) == ord("q"): 
         break
+
+#modify tayo dito perd 
+
