@@ -1,9 +1,7 @@
 import cv2
-import datetime
 cap = cv2.VideoCapture(0)
-face_cascade = cv2.CascadeClassifier(r'C:/Desktop/mycodes/.venv/Lib/site-packages/haarcascade_frontalface_default.xml')
-smile_cascade = cv2.CascadeClassifier(r'C:/Downloads/haarcascade_smile.xml')
 while True:
+<<<<<<< HEAD
     _, frame = cap.read()
     original_frame = frame.copy()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
@@ -24,3 +22,9 @@ while True:
 
 #modify tayo dito perd 
 
+=======
+     _, frame = cap.read()
+     cv2.imshow("automatic capture camera", frame)
+     if cv2.waitKey(10) == ord("q"): 
+      break
+>>>>>>> ba1600df90257affd464baf6b394ad8077110d71
